@@ -105,10 +105,13 @@
             <i class="fas fa-house-user"></i>
             <p style="text-align: center;">홈</p>
           </a>
-          <a href="#" style="padding-right: 30px; color: black;">
-            <i class="fas fa-search"></i>
-            <p>검색</p>
-          </a>
+
+          <div id="hiden" onclick="clickme();">
+            <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+            <p style="padding-right: 30px;">위로</p>
+           
+          </div>
+        
       </div>
     </div>
     <!-- 2.용범이네 인계동껍데기 -->
@@ -208,10 +211,12 @@
           <i class="fas fa-house-user"></i>
           <p style="text-align: center;">홈</p>
         </a>
-        <a href="#" style="padding-right: 30px; color: black;">
-          <i class="fas fa-search"></i>
-          <p>검색</p>
-        </a>
+        <div id="hiden2" onclick="clickme();">
+          <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+          <p style="padding-right: 30px;">위로</p>
+         
+        </div>
+      
       </div>
     </div>
     <!-- 3.교동면옥 -->
@@ -311,10 +316,12 @@
           <i class="fas fa-house-user"></i>
           <p style="text-align: center;">홈</p>
         </a>
-        <a href="#" style="padding-right: 30px; color: black;">
-          <i class="fas fa-search"></i>
-          <p>검색</p>
-        </a>
+        <div id="hiden3" onclick="clickme();">
+          <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+          <p style="padding-right: 30px;">위로</p>
+         
+        </div>
+       
       </div>
     </div>
     <!-- 4.유가네 -->
@@ -414,10 +421,11 @@
           <i class="fas fa-house-user"></i>
           <p style="text-align: center;">홈</p>
         </a>
-        <a href="#" style="padding-right: 30px; color: black;">
-          <i class="fas fa-search"></i>
-          <p>검색</p>
-        </a>
+        <div id="hiden4" onclick="clickme();">
+          <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+          <p style="padding-right: 30px;">위로</p>
+         
+        </div>
       </div>
     </div>
     <!-- 5.차돌풍 -->
@@ -517,10 +525,12 @@
           <i class="fas fa-house-user"></i>
           <p style="text-align: center;">홈</p>
         </a>
-        <a href="#" style="padding-right: 30px; color: black;">
-          <i class="fas fa-search"></i>
-          <p>검색</p>
-        </a>
+        <div id="hiden5" onclick="clickme();">
+          <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+          <p style="padding-right: 30px;">위로</p>
+         
+        </div>
+     
       </div>
     </div>
     <!-- 6.육대장 -->
@@ -620,13 +630,41 @@
           <i class="fas fa-house-user"></i>
           <p style="text-align: center;">홈</p>
         </a>
-        <a href="#" style="padding-right: 30px; color: black;">
-          <i class="fas fa-search"></i>
-          <p>검색</p>
-        </a>
+        <div id="hiden6" onclick="clickme();">
+          <i class="fas fa-arrow-up" style="padding-right: 25px;"></i>
+          <p style="padding-right: 30px;">위로</p>
+         
+        </div>
+   
       </div>
     </div>
   
   </body>
+  <script>
+
+    window.onscroll = function() {arrowbar()};
+  
+    function clickme() {
+    window.scrollTo(0,0);
+  }
+    
+    function arrowbar() {
+    if (window.scrollY > 75) {
+      document.getElementById("hiden").style="display: block"
+      document.getElementById("hiden2").style="display: block"
+      document.getElementById("hiden3").style="display: block"
+      document.getElementById("hiden4").style="display: block"
+    } 
+    else
+    {    
+      document.getElementById("hiden").style="display: none"
+      document.getElementById("hiden2").style="display: none"
+      document.getElementById("hiden3").style="display: none"
+      document.getElementById("hiden4").style="display: none"
+  
+    }
+  }
+  
+    </script>
 
 </html>

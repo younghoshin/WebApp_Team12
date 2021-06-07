@@ -15,11 +15,99 @@
 </head>
 
 <body class="wrap">
+    <div data-role="page" id="searchpage">
+        <div data-role="panel" id="overayPanel" data-display="overlay" data-position="right">
+            <h1>검색</h1>
+            <!-- 검색 -->
+            <a href="#" style="padding-right: 30px; color: black; text-decoration: none;">
+                <i class="fas fa-search"></i>
+                <input onkeyup="filter()" type="text" id="value" placeholder="검색어 입력">
+                <button>검색</button>
+            </a>
+            
+            <!-- 한식 -->
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pageone" target="_self">현풍닭칼국수</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pagetwo" target="_self">인계동껍데기</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pagethree" target="_self">교동면옥</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pagefour" target="_self">유가네</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pagefive" target="_self">차돒풍</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Korea/detail_menu.html#pagesix" target="_self">육대장</a></span>
+            </div>
+            <!-- 중식 -->
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pageone" target="_self">홍콩반점</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pagetwo" target="_self">마마미</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pagethree" target="_self">칭구짬뽕</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pagefour" target="_self">오복반점</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pagefive" target="_self">안여정</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./China/detail_menu-c.html#pagesix" target="_self">태건춘</a></span>
+            </div>
+            <!-- 일식 -->
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Japan/detail_menu-j.html#pageone" target="_self">하루엔소쿠</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Japan/detail_menu-j.html#pagetwo" target="_self">역전우동0410</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Japan/detail_menu-j.html#pagethree" target="_self">돈갓 수제돈까스</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Japan/detail_menu-j.html#pagefour" target="_self">손씨다이닝</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./Japan/detail_menu-j.html#pagefive" target="_self">스시카츠</a></span>
+            </div>
+            <!-- 양식 -->
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./West/detail_menu-w.html#pageone" target="_self">파스토보이</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./West/detail_menu-w.html#pagethree" target="_self">QUIDA</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./West/detail_menu-w.html#pagefour" target="_self">파스타입니다</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./West/detail_menu-w.html#pagefive" target="_self">라라코스트</a></span>
+            </div>
+            <div class="item" style="display: none;">
+                <span class="name"><a href="./West/detail_menu-w.html#pagesix" target="_self">낫낫 칼국수</a></span>
+            </div>
+            <!-- -->
+        </div>
+    </div>
+
     <header class="header" text-align: center;>
         <img src="../img/banner.png" alt="하양맛집" width="110" height="110">
+        
     </header>
-
+    
     <main>
+        <a href="#overayPanel" data-rel="close" data-position="right"
+            class="ui-btn ui-icon-search ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-right">
+        </a>
         <a href="main_menu.html#pageone" target="_self">
             <div class="content_korea" id="font">
                 <h2>한 식</h2>
@@ -55,17 +143,39 @@
             <div class="content_jepan" id="font">
                 <h2>일 식</h2>
             </div>
-        
             <div class="content_jepan">
                 <img src="../img/japan.png">
             </div>
         </a>
+        
+        <div class="search">
+
+        </div>
+        
+
     </main>
     <div class="main_footer">
-        <h4>copyright © Team12</h4>
+        <P>copyright © Team12</P>
     </div>
 
 </body>
 
+<script type="text/javascript">
+    function filter() {
 
+        var value, name, item, i;
+
+        value = document.getElementById("value").value.toUpperCase();
+        item = document.getElementsByClassName("item");
+
+        for (i = 0; i < item.length; i++) {
+            name = item[i].getElementsByClassName("name");
+            if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+                item[i].style.display = "flex";
+            } else {
+                item[i].style.display = "none";
+            }
+        }
+    }
+</script>
 </html>
