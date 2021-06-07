@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+  <head> 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset=UTF-8″ />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css?ver=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://kit.fontawesome.com/20fe46358c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <!-- 1.현풍닭칼국수 -->
+    <div data-role="page" id="pageone">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pageone" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+      
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon" data-rel="back"></a>
+        <a href="#pan1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/1hyunpung/m.png" style="width: 100%;" height="300px">
+      </div>
+      
+      <div data-role="content" class="main-content">
+        <h2>현풍닭칼국수</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star">  4.4/5</i></span> 
+        <hr> 
+        <div class="flex">
+          <div class="flex_s">    
+            <a href="https://www.google.co.kr/maps/place/%ED%98%84%ED%92%8D%EB%8B%AD%EC%B9%BC%EA%B5%AD%EC%88%98%EA%B2%BD%EC%82%B0%ED%95%98%EC%96%91%EC%A0%90/@35.913997,128.8169686,17z/data=!3m1!4b1!4m5!3m4!1s0x35667278f2bd88c1:0x10ed37b0fcf69516!8m2!3d35.913997!4d128.8191573?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location"><p>위치</p></i></a>
+            </div>
+            <div class="flex_s_1">
+              <a href="http://hyunpungkalguksu.com/" style="color: tomato;">
+                <i class="fas fa-home"><p>홈페이지</p></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <i class="fas fa-phone-alt">⠀⠀053-857-2200</i>
+          <hr>
+          <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 하양로 110</i>
+          <hr>
+          <i class="far fa-clock">⠀⠀이용시간을 알수없음</i>
+          <hr>
+          <i class="fas fa-home"><a href="http://hyunpungkalguksu.com/" style="color: tomato;">⠀⠀http://hyunpungkalguksu.com/</a></i>
+          <hr style="margin-bottom: 0;">
+        </div>
+        <div class="content">
+          <h2>⠀⠀대표 메뉴</h2>
+          <div class="flex">
+            <div class="flex_s" style="text-align: center;">
+              <div class="size">
+                <img src="../../img/Korea/1hyunpung/m1.png">
+              </div>
+              <h4>닭칼국수</h4>
+              <p id="p_hr">7,000원</p>
+            </div>
+            <div class="flex_s_1" style="text-align: center;">
+              <div class="size">
+                <img src="../../img/Korea/1hyunpung/m2.png" >
+              </div>
+              <h4>삼계칼국수</h4>
+              <p id="p_hr">9,500원</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex_s" style="text-align: center;">
+              <div class="size">
+                <img src="../../img/Korea/1hyunpung/m3.png">
+              </div>
+              <h4>닭칼수육세트</h4>
+              <p>13,000</p>
+            </div>
+            <div class="flex_s_1" style="text-align: center;">
+              <div class="size">
+                <img src="../../img/Korea/1hyunpung/m4.png" style="max-width: 100%; height: auto;">
+              </div>
+              <h4>삼계수육세트</h4>
+              <p>15,500원</p>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="foot">
+          <a href="../index.html" style="color: black;" target="_self">
+            <i class="fas fa-house-user"></i>
+            <p style="text-align: center;">홈</p>
+          </a>
+          <a href="#" style="padding-right: 30px; color: black;">
+            <i class="fas fa-search"></i>
+            <p>검색</p>
+          </a>
+      </div>
+    </div>
+    <!-- 2.용범이네 인계동껍데기 -->
+    <div data-role="page" id="pagetwo">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pagetwo" data-rel="close"
+          class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+    
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"
+          data-rel="back"></a>
+        <a href="#pan1"
+          class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/2younbum/m.png" style="width: 100%;" height="300px">
+      </div>
+    
+      <div data-role="content" class="main-content">
+        <h2>용범이네인계동껍데기</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star"> 4.4/5</i></span>
+        <hr>
+        <div class="flex">
+          <div class="flex_s">
+            <a href="https://www.google.co.kr/maps/place/%EC%9D%B8%EA%B3%84%EB%8F%99%EA%BB%8D%EB%8D%B0%EA%B8%B0/@35.9114056,128.8138364,16z/data=!4m9!1m2!2m1!1z7J246rOE64-Z6ruN642w6riwIO2VmOyWkeygkA!3m5!1s0x3566727e87465629:0x586f09923d95b2cf!8m2!3d35.9112761!4d128.8156936!15sChzsnbjqs4Trj5nqu43rjbDquLAg7ZWY7JaR7KCQWiwKCu2VmOyWkSDsoJAiHuyduOqzhOuPmSDqu43rjbDquLAg7ZWY7JaRIOygkJIBCnJlc3RhdXJhbnQ?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location">
+                <p>위치</p>
+              </i></a>
+          </div>
+          <div class="flex_s_1">
+            <a href="" style="color: tomato;">
+              <i class="fas fa-home">
+                <p>홈페이지</p>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <i class="fas fa-phone-alt">⠀⠀053-856-3630</i>
+        <hr>
+        <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 하양역길 25</i>
+        <hr>
+        <i class="far fa-clock">⠀⠀매일 17:00 - 03:00</i>
+        <hr>
+        <i class="fas fa-home"><a href=""
+            style="color: tomato;">⠀⠀홈페이지 없음</a></i>
+        <hr style="margin-bottom: 0;">
+      </div>
+      <div class="content">
+        <h2>⠀⠀대표 메뉴</h2>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/2younbum/m1.png" >
+            </div>
+            <h4>벌집껍데기</h4>
+            <p id="p_hr">7,000원</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/2younbum/m2.png" >
+            </div>
+            <h4>대창껍데기</h4>
+            <p id="p_hr">9,900원</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/2younbum/m3.png">
+            </div>
+            <h4>고추장짜글이</h4>
+            <p>6,900</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/2younbum/m4.png" >
+            </div>
+            <h4>물냉면</h4>
+            <p>5,000원</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="foot">
+        <a href="../index.html" style="color: black;" target="_self">
+          <i class="fas fa-house-user"></i>
+          <p style="text-align: center;">홈</p>
+        </a>
+        <a href="#" style="padding-right: 30px; color: black;">
+          <i class="fas fa-search"></i>
+          <p>검색</p>
+        </a>
+      </div>
+    </div>
+    <!-- 3.교동면옥 -->
+    <div data-role="page" id="pagethree">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pagethree" data-rel="close"
+          class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+    
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"
+          data-rel="back"></a>
+        <a href="#pan1"
+          class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/3gyeodong/m.png" style="width: 100%;" height="300px">
+      </div>
+    
+      <div data-role="content" class="main-content">
+        <h2>교동면옥</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star"> 4.4/5</i></span>
+        <hr>
+        <div class="flex">
+          <div class="flex_s">
+            <a href="https://www.google.co.kr/maps/place/%EA%B5%90%EB%8F%99%EB%A9%B4%EC%98%A5+%ED%95%98%EC%96%91%EC%A0%90/@35.9078068,128.8119416,17z/data=!3m1!4b1!4m5!3m4!1s0x356672873d3b5511:0x5f908ba683fbb3b3!8m2!3d35.9078068!4d128.8141303?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location">
+                <p>위치</p>
+              </i></a>
+          </div>
+          <div class="flex_s_1">
+            <a href="http://www.kyodongfnb.com/" style="color: tomato;">
+              <i class="fas fa-home">
+                <p>홈페이지</p>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <i class="fas fa-phone-alt">⠀⠀0507-1372-7222</i>
+        <hr>
+        <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 대경로 668</i>
+        <hr>
+        <i class="far fa-clock">⠀⠀매일 11:00 - 21:30</i>
+        <hr>
+        <i class="fas fa-home"><a href="http://www.kyodongfnb.com/"
+            style="color: tomato;">⠀⠀http://www.kyodongfnb.com/</a></i>
+        <hr style="margin-bottom: 0;">
+      </div>
+      <div class="content">
+        <h2>⠀⠀대표 메뉴</h2>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/3gyeodong/m1.png" >
+            </div>
+            <h4>교동 특냉면</h4>
+            <p id="p_hr">10,000원</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/3gyeodong/m2.png" >
+            </div>
+            <h4>육전 물비빔면</h4>
+            <p id="p_hr">9,000원</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/3gyeodong/m3.png">
+            </div>
+            <h4>육전 물냉면</h4>
+            <p>8,000</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/3gyeodong/m4.png" >
+            </div>
+            <h4>육전 비빔냉면</h4>
+            <p>9,000원</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="foot">
+        <a href="../index.html" style="color: black;" target="_self">
+          <i class="fas fa-house-user"></i>
+          <p style="text-align: center;">홈</p>
+        </a>
+        <a href="#" style="padding-right: 30px; color: black;">
+          <i class="fas fa-search"></i>
+          <p>검색</p>
+        </a>
+      </div>
+    </div>
+    <!-- 4.유가네 -->
+    <div data-role="page" id="pagefour">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pagefour" data-rel="close"
+          class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+    
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"
+          data-rel="back"></a>
+        <a href="#pan1"
+          class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/4uga/m.jpg" style="width: 100%;" height="300px">
+      </div>
+    
+      <div data-role="content" class="main-content">
+        <h2>유가네닭갈비</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star"> 4.4/5</i></span>
+        <hr>
+        <div class="flex">
+          <div class="flex_s">
+            <a href="https://www.google.co.kr/maps/place/%EC%9C%A0%EA%B0%80%EB%84%A4%EB%8B%AD%EA%B0%88%EB%B9%84+%ED%95%98%EC%96%91%EC%A0%90/@35.9130728,128.7703094,12z/data=!4m9!1m2!2m1!1z7Jyg6rCA64Sk!3m5!1s0x356673fa8dd8e481:0x823ff7d131e4dbb1!8m2!3d35.9097448!4d128.8141112!15sCgnsnKDqsIDrhKQiA4gBAVoYCgrsnKDqsIAg64SkIgrsnKDqsIAg64SkkgEWY2hpY2tlbl9yaWJfcmVzdGF1cmFudA?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location">
+                <p>위치</p>
+              </i></a>
+          </div>
+          <div class="flex_s_1">
+            <a href="" style="color: tomato;">
+              <i class="fas fa-home">
+                <p>홈페이지</p>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <i class="fas fa-phone-alt">⠀⠀053-856-3883</i>
+        <hr>
+        <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 문화로 2 2층 유가네닭갈비 경산하양점</i>
+        <hr>
+        <i class="far fa-clock">⠀⠀매일 11:00 - 22:00</i>
+        <hr>
+        <i class="fas fa-home"><a href=""
+            style="color: tomato;">⠀⠀</a></i>
+        <hr style="margin-bottom: 0;">
+      </div>
+      <div class="content">
+        <h2>⠀⠀대표 메뉴</h2>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/4uga/m1.jpg">
+            </div>
+            <h4>닭갈비 철판 볶음밥</h4>
+            <p id="p_hr">6,500원</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/4uga/m2.jpg">
+            </div>
+            <h4>갈릭 닭갈비 철판볶음밥</h4>
+            <p id="p_hr">7,000원</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/4uga/m3.jpg">
+            </div>
+            <h4>유가네 닭갈비</h4>
+            <p>18,000</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/4uga/m4.jpg">
+            </div>
+            <h4>매운 닭갈비</h4>
+            <p>20,000원</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="foot">
+        <a href="../index.html" style="color: black;" target="_self">
+          <i class="fas fa-house-user"></i>
+          <p style="text-align: center;">홈</p>
+        </a>
+        <a href="#" style="padding-right: 30px; color: black;">
+          <i class="fas fa-search"></i>
+          <p>검색</p>
+        </a>
+      </div>
+    </div>
+    <!-- 5.차돌풍 -->
+    <div data-role="page" id="pagefive">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pagefive" data-rel="close"
+          class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+    
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"
+          data-rel="back"></a>
+        <a href="#pan1"
+          class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/5chadol/m.jpg" style="width: 100%;" height="300px">
+      </div>
+    
+      <div data-role="content" class="main-content">
+        <h2>현풍닭칼국수</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star"> 4.4/5</i></span>
+        <hr>
+        <div class="flex">
+          <div class="flex_s">
+            <a href="https://www.google.co.kr/maps/place/%EC%B0%A8%EB%8F%8C%ED%92%8D/@35.9111145,128.8143475,17z/data=!3m1!4b1!4m5!3m4!1s0x3566727e8b6aeac9:0x3ccad58586d3f4aa!8m2!3d35.9111145!4d128.8165362?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location">
+                <p>위치</p>
+              </i></a>
+          </div>
+          <div class="flex_s_1">
+            <a href="http://www.chadolpoong.com/" style="color: tomato;">
+              <i class="fas fa-home">
+                <p>홈페이지</p>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <i class="fas fa-phone-alt">⠀⠀053-852-9293</i>
+        <hr>
+        <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 하양역길 20</i>
+        <hr>
+        <i class="far fa-clock">⠀⠀매일 11:30 - 03:00</i>
+        <hr>
+        <i class="fas fa-home"><a href="http://www.chadolpoong.com/"
+            style="color: tomato;">⠀⠀http://www.chadolpoong.com/</a></i>
+        <hr style="margin-bottom: 0;">
+      </div>
+      <div class="content">
+        <h2>⠀⠀대표 메뉴</h2>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/5chadol/m1.jpg" >
+            </div>
+            <h4>차돌박이</h4>
+            <p id="p_hr">5,500원</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/5chadol/m2.jpg">
+            </div>
+            <h4>우삼겹</h4>
+            <p id="p_hr">4,900원</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/5chadol/m3.jpg">
+            </div>
+            <h4>매콤차돌박이</h4>
+            <p>6,500</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/5chadol/m4.jpg">
+            </div>
+            <h4>달콤우삼겹</h4>
+            <p>5,900원</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="foot">
+        <a href="../index.html" style="color: black;" target="_self">
+          <i class="fas fa-house-user"></i>
+          <p style="text-align: center;">홈</p>
+        </a>
+        <a href="#" style="padding-right: 30px; color: black;">
+          <i class="fas fa-search"></i>
+          <p>검색</p>
+        </a>
+      </div>
+    </div>
+    <!-- 6.육대장 -->
+    <div data-role="page" id="pagesix">
+      <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+        <a href="#pagesix" data-rel="close"
+          class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+        <ui id="list">
+          <hr>
+          <ul><a href="../main_menu.html#pageone" target="_self">한식</a></ul>
+          <ul><a href="../main_menu.html#pagetwo" target="_self">중식</a></ul>
+          <ul><a href="../main_menu.html#pagethree" target="_self">일식</a></ul>
+          <ul><a href="../main_menu.html#pagefour" target="_self">양식</a></ul>
+        </ui>
+      </div>
+    
+      <div data-role="header" id="HF_style">
+        <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"
+          data-rel="back"></a>
+        <a href="#pan1"
+          class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+      </div>
+      <div class="bak">
+        <img src="../../img/Korea/6yuk/m1.jpg" style="width: 100%;" height="300px">
+      </div>
+    
+      <div data-role="content" class="main-content">
+        <h2>육대장</h2>
+        <span style="color:rgb(255, 230, 0)"><i class="fas fa-star"> 4.4/5</i></span>
+        <hr>
+        <div class="flex">
+          <div class="flex_s">
+            <a href="https://www.google.co.kr/maps/place/%EC%9C%A1%EB%8C%80%EC%9E%A5+%ED%95%98%EC%96%91%EC%A0%90/@35.9178747,128.8279446,17z/data=!3m1!4b1!4m5!3m4!1s0x35666d8def625cb9:0x8459b6a51e575a98!8m2!3d35.9178747!4d128.8301333?hl=ko"
+              style="color: tomato;">
+              <i class="fas fa-search-location">
+                <p>위치</p>
+              </i></a>
+          </div>
+          <div class="flex_s_1">
+            <a href="http://m.facebook.com/yukdae7512" style="color: tomato;">
+              <i class="fas fa-home">
+                <p>홈페이지</p>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <i class="fas fa-phone-alt">⠀⠀053-854-7888</i>
+        <hr>
+        <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 대경로 849 1층</i>
+        <hr>
+        <i class="far fa-clock">⠀⠀매일 10:00 - 21:00</i>
+        <hr>
+        <i class="fas fa-home"><a href="http://m.facebook.com/yukdae7512"
+            style="color: tomato;">⠀⠀http://m.facebook.com/yukdae7512</a></i>
+        <hr style="margin-bottom: 0;">
+      </div>
+      <div class="content">
+        <h2>⠀⠀대표 메뉴</h2>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/6yuk/m1.jpg" >
+            </div>
+            <h4>옛날전통 육개장</h4>
+            <p id="p_hr">9,000원</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/6yuk/m2.jpg">
+            </div>
+            <h4>육개장 설렁탕</h4>
+            <p id="p_hr">8,000원</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex_s" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/6yuk/m3.jpg" >
+            </div>
+            <h4>육칼면</h4>
+            <p>9,000</p>
+          </div>
+          <div class="flex_s_1" style="text-align: center;">
+            <div class="size">
+              <img src="../../img/Korea/6yuk/m4.jpg">
+            </div>
+            <h4>차돌육개장</h4>
+            <p>10,000원</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="foot">
+        <a href="../index.html" style="color: black;" target="_self">
+          <i class="fas fa-house-user"></i>
+          <p style="text-align: center;">홈</p>
+        </a>
+        <a href="#" style="padding-right: 30px; color: black;">
+          <i class="fas fa-search"></i>
+          <p>검색</p>
+        </a>
+      </div>
+    </div>
+  
+  </body>
+
+</html>
